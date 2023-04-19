@@ -82,7 +82,11 @@ export default NotFound;
 
 Un `<Link>` es un elemento que permite al usuario navegar a otra página haciendo clic o tocándola. En `react-router-dom`, un `<Link>` representa un elemento `<a>` accesible con un href real que apunta al recurso al que se vincula. Esto significa que cosas como hacer clic con el botón derecho en un `<Link>` funcionan como cabría esperar. Puede usar `<Link reloadDocument>` para omitir el enrutamiento del lado del cliente y dejar que el navegador maneje la transición normalmente (como si fuera un `<a href>`).
 
-Ahora podemos utilizar las rutas ya especificadas en el <BrowserRouter>, para navegar entre ellas con <Link>. Como podemos ver en `./components/NotFound.tsx`:
+Primero importamos `<Link>`:
+  
+  `import { Link } from 'react-router-dom';`
+  
+Ahora podemos utilizar las rutas ya especificadas en el <BrowserRouter>, para navegar entre ellas con `<Link>`. Como podemos ver en `./components/NotFound.tsx`:
 
 `<Link to="/">Inicio</Link>`
 
